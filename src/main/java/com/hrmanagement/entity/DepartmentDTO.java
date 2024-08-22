@@ -1,19 +1,12 @@
 package com.hrmanagement.entity;
 
 import java.util.List;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
-
 public class DepartmentDTO {
 
 
     int departmentId;
     String departmentName;
-    @OneToMany(mappedBy="department")
     private List<EmployeeDTO> employees;
-
 
     public DepartmentDTO() {
         super();
