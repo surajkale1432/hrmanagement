@@ -6,17 +6,17 @@ public class DepartmentDTO {
 
     int departmentId;
     String departmentName;
-    private List<EmployeeDTO> employees;
+//    private List<EmployeeDTO> employees;
 
     public DepartmentDTO() {
         super();
     }
 
-    public DepartmentDTO(int departmentId, String departmentName,List<EmployeeDTO> employees) {
+    public DepartmentDTO(int departmentId, String departmentName) {
         super();
         this.departmentId = departmentId;
         this.departmentName = departmentName;
-        this.employees=employees;
+//        this.employees=employees;
     }
 
     public int getDepartmentId() {
@@ -35,14 +35,14 @@ public class DepartmentDTO {
         this.departmentName = departmentName;
     }
 
-    public void setEmployees(List<EmployeeDTO> employees){
-        this.employees=employees;
-    }
-    public List<EmployeeDTO> getEmployees(){
-        return this.employees;
-    }
-    @Override
-    public String toString() {
-        return "Department [departmentId=" + departmentId + ", departmentName=" + departmentName + "]";
-    }
+//    public void setEmployees(List<EmployeeDTO> employees){
+//        this.employees=employees;
+//    }
+//    public List<EmployeeDTO> getEmployees(){
+//        return this.employees;
+//    }
+//    @Override
+//    public String toString() {
+//        return "Department [departmentId=" + departmentId + ", departmentName=" + departmentName + "]";
+//    }
 }

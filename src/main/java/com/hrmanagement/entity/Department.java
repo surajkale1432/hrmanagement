@@ -12,7 +12,7 @@ public class Department {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	int departmentId;
+	private int departmentId;
 	String departmentName;
 	@OneToMany(mappedBy="department")
 	private List<Employee> employees;

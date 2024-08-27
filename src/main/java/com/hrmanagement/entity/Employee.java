@@ -22,6 +22,7 @@ public class Employee {
 	private String employeeFirstName;
 	private String employeeLastName;
 	private String employeeEmail;
+	private String employeePassword;
 	private long employeePhoneNumber;
 	private Date employeeHireDate;
 	private int employeeSalary;
@@ -33,13 +34,14 @@ public class Employee {
 	public Employee() {
 		super();
 	}
-	public Employee(int employeeId, String employeeFirstName, String employeeLastName, String employeeEmail,
-			long employeePhoneNumber, Date employeeHireDate, int employeeJobId, int employeeSalary,Department department) {
+	public Employee(int employeeId, String employeeFirstName, String employeeLastName, String employeeEmail,String employeePassword,
+			long employeePhoneNumber, Date employeeHireDate,int employeeSalary,Department department) {
 		super();
 		this.employeeId = employeeId;
 		this.employeeFirstName = employeeFirstName;
 		this.employeeLastName = employeeLastName;
 		this.employeeEmail = employeeEmail;
+		this.employeePassword = employeePassword;
 		this.employeePhoneNumber = employeePhoneNumber;
 		this.employeeHireDate = employeeHireDate;
 		this.employeeSalary = employeeSalary;
@@ -65,6 +67,12 @@ public class Employee {
 	}
 	public String getEmployeeEmail() {
 		return employeeEmail;
+	}
+	public  String getEmployeePassword(){
+		return employeePassword;
+	}
+	public void setEmployeePassword(String employeePassword) {
+		this.employeePassword=employeePassword;
 	}
 	public void setEmployeeEmail(String employeeEmail) {
 		this.employeeEmail = employeeEmail;

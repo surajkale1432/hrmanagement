@@ -11,6 +11,7 @@ public class EmployeeDTO {
     private String employeeFirstName;
     private String employeeLastName;
     private String employeeEmail;
+    private String employeePassword;
     private long employeePhoneNumber;
     private Date employeeHireDate;
     private int employeeSalary;
@@ -20,8 +21,7 @@ public class EmployeeDTO {
     public EmployeeDTO() {
         super();
     }
-    public EmployeeDTO(int employeeId, String employeeFirstName, String employeeLastName, String employeeEmail,
-                    long employeePhoneNumber, Date employeeHireDate,int employeeSalary,DepartmentDTO department) {
+    public EmployeeDTO(int employeeId,String employeeFirstName,String employeeLastName, String employeeEmail, String employeePassword, long employeePhoneNumber,Date employeeHireDate,int employeeSalary,DepartmentDTO department) {
         super();
         this.employeeId = employeeId;
         this.employeeFirstName = employeeFirstName;
@@ -55,6 +55,12 @@ public class EmployeeDTO {
     }
     public void setEmployeeEmail(String employeeEmail) {
         this.employeeEmail = employeeEmail;
+    }
+    public void setEmployeePassword(String employeePassword){
+        this.employeePassword=employeePassword;
+    }
+    public String getEmployeePassword(){
+        return employeePassword;
     }
     public long getEmployeePhoneNumber() {
         return employeePhoneNumber;
