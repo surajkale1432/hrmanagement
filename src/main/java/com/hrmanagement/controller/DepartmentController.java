@@ -7,12 +7,7 @@ import com.hrmanagement.entity.DepartmentDTO;
 import com.hrmanagement.entity.Employee;
 import com.hrmanagement.entity.EmployeeDTO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.hrmanagement.entity.Department;
 import com.hrmanagement.repository.DepartmentRepository;
@@ -21,7 +16,7 @@ import jakarta.transaction.Transactional;
 
 @RestController
 @Transactional
-
+@CrossOrigin
 public class DepartmentController {
 	
 	@Autowired
@@ -35,7 +30,7 @@ public class DepartmentController {
 			List<EmployeeDTO>employeesDTOS=new ArrayList<>();
 			List<Employee> realEmployee = department.getEmployees();
 			for(Employee employee:realEmployee){
-				EmployeeDTO employeeDTO = new EmployeeDTO(employee.getEmployeeId(),employee.getEmployeeFirstName(),employee.getEmployeeLastName(),employee.getEmployeeEmail(),employee.getEmployeePhoneNumber(),employee.getEmployeeHireDate(),employee.getEmployeeSalary(),null);
+				EmployeeDTO employeeDTO = new EmployeeDTO(employee.getEmployeeId(),employee.getEmployeeFirstName(),employee.getEmployeeLastName(),employee.getEmployeeEmail(),employee.getEmployeePassword(),employee.getEmployeePhoneNumber(),employee.getEmployeeHireDate(),employee.getEmployeeSalary(),null);
 				employeesDTOS.add(employeeDTO);
 			}
 			DepartmentDTO departmentDTO = new DepartmentDTO(department.getDepartmentId(),department.getDepartmentName(),employeesDTOS);

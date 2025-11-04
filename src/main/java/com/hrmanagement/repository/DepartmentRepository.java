@@ -14,4 +14,5 @@ public interface DepartmentRepository extends CrudRepository<Department, Integer
 	List<Department> findByDepartmentName(String departmentName);
 
 	
+	
 }

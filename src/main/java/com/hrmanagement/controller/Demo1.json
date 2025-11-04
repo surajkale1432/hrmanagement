@@ -1,0 +1,67 @@
+{
+  "custDetails": [
+    {
+      "custId": "583910344",
+      "status": "CAM2O",
+      "acctDetails": [
+        {
+          "AcctId": "102705001129",
+          "AcctName": "GANESH ENTERPRISES",
+          "AcctOpenDate": "02-04-2022",
+          "SchemeType": "CAA",
+          "SchemeCode": "CABUS",
+          "acctStatus": "A"
+        }
+      ]
+    },
+    {
+      "custId": "583910364",
+      "status": "CAM2O",
+      "acctDetails": [
+        {}
+      ]
+    },
+    {
+      "custId": "583910431",
+      "status": "CAM2O",
+      "acctDetails": [
+        {
+          "AcctId": "102705001141",
+          "AcctName": "INDIAN SWEETS amp; MISTHAN",
+          "AcctOpenDate": "02-04-2022",
+          "SchemeType": "CAA",
+          "SchemeCode": "CAOLP",
+          "acctStatus": "A"
+        }
+      ]
+    },
+    {
+      "custId": "583910340",
+      "status": "OLPOD",
+      "acctDetails": [
+        {
+          "AcctId": "102705001128",
+          "AcctName": "PRATAP MOVERS amp; PACKERS",
+          "AcctOpenDate": "02-04-2022",
+          "SchemeType": "CAA",
+          "SchemeCode": "CAOLP",
+          "acctStatus": "A"
+        }
+      ]
+    },
+    {
+      "custId": "583910319",
+      "status": "CAM2O",
+      "acctDetails": [
+        {
+          "AcctId": "102705001125",
+          "AcctName": "KAREEMS MOVERS amp; PACKERS",
+          "AcctOpenDate": "02-04-2022",
+          "SchemeType": "CAA",
+          "SchemeCode": "CABUS",
+          "acctStatus": "A"
+        }
+      ]
+    }
+  ]
+}
